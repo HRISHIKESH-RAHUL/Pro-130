@@ -1,0 +1,29 @@
+.heading{
+    font-size: 25px;
+    width: 100%;
+    margin: 0px;
+}
+
+.note{
+    font-size: 17px;
+    color: black;
+}
+
+
+body{
+    background-size: cover;
+}
+
+#song_name{
+    height: 45px;
+    width: 300px;
+    font-size: 20px;
+    font-family: Georgia;
+}
+
+canvas{
+    border: 5px solid white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    background-color: rgb(0, 0, 0);
+}
