@@ -34,22 +34,26 @@ image(video,0,0,600,500);
 fill("#00aee3");
 stroke("#000000");
 song1_status=song_1.isPlaying();
+song2_status=song_2.isPlaying();
+
 if(score_Lw > 0.2){
     circle(leftWristX,leftWristY,35);
-    song_2.stop()
-}
-if(song1_status == false){
-    song_1.play();
-    document.getElementById("song_name").innerHTML = "Song Name: Bezubaan";
+    song_2.stop();
+
+    if(song1_status == false){
+        song_1.play();
+        document.getElementById("song_name").innerHTML = "Song Name: Bezubaan";
+    }
 }
 
 if(score_Rw > 0.2){
     circle(rightWristX,rightWristY,35);
-    song_1.stop()
-}
-if(song2_status == false){
-    song_2.play();
-    document.getElementById("song_name").innerHTML = "Song Name: Saathiya";
+    song_1.stop();
+
+    if(song2_status == false){
+        song_2.play();
+        document.getElementById("song_name").innerHTML = "Song Name: Saathiya";
+    }
 }
 }
 
